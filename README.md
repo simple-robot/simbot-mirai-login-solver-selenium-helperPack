@@ -5,7 +5,7 @@ mirai2.0-M2更新后，增加了对「滑动验证」的支持，这是一个很
 此项目为一个预先提供的，拥有「滑动验证」模块的一个极简simbot-mirai工程。
 
 ## 获取
-通过github releases下载最新的编译jar文件，或者clone此项目自行编译打包。
+通过[github releases](https://github.com/simple-robot/simbot-mirai-login-solver-selenium-helperPack/releases) 下载最新的编译jar文件，或者clone此项目自行编译打包。
 
 ## 使用
 
@@ -18,4 +18,4 @@ java -jar simbot-mirai-login-solver-selenium-helper.jar
 
 如果验证成功，在最后会展示登录后的bot信息并终止当前程序，不出意外的话，你的bot就可以在simbot下进行使用了。
 
-如果出现了错误且最终无法登录，请保留完整错误信息并通过 github issue 进行反馈。
+如果出现了错误且最终无法登录，请保留完整错误信息并通过[github issue](https://github.com/simple-robot/simbot-mirai-login-solver-selenium-helperPack/issues) 进行反馈。
