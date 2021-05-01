@@ -28,6 +28,10 @@ public class App {
         logger.info("#####################################################");
         logger.info("#                                                   #");
         logger.info("#  请确保当前为「桌面环境」，且系统默认浏览器为「chrome」。 #");
+        logger.info("#  且系统默认浏览器为「chrome」。                       #");
+        logger.info("#  且系统默认浏览器为「chrome」。                       #");
+        logger.info("#  且系统默认浏览器为「CHROME」。                       #");
+        logger.info("#  且系统默认浏览器为「C-H-R-O-M-E」。                  #");
         logger.info("#  过程中可能会下载部分所需文件，请保持网络流畅。          #");
         logger.info("#                                                   #");
         logger.info("#####################################################");
