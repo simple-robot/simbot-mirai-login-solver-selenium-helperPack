@@ -6,7 +6,7 @@
 
     <groupId>love.forte.example</groupId>
     <artifactId>simbot-mirai-login-solver-selenium-helperPack</artifactId>
-    <version>1.1</version>
+    <version>1.2</version>
 
     <parent>
         <groupId>love.forte.simple-robot</groupId>

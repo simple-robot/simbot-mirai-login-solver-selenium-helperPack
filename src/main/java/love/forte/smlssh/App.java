@@ -2,14 +2,13 @@ package love.forte.smlssh;
 
 import love.forte.simbot.annotation.SimbotApplication;
 import love.forte.simbot.api.sender.BotSender;
-import love.forte.simbot.bot.Bot;
-import love.forte.simbot.bot.BotManager;
-import love.forte.simbot.bot.BotRegisterInfo;
+import love.forte.simbot.bot.*;
 import love.forte.simbot.core.SimbotApp;
 import love.forte.simbot.core.SimbotContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.Console;
 import java.util.Scanner;
 
 /**
@@ -44,10 +43,17 @@ public class App {
 
         logger.info("输入您的密码：");
         System.out.print("密码：");
-        password = scanReader.nextLine();
 
+        Console console = System.console();
+        if (console != null) {
+            password = new String(console.readPassword());
+        } else {
+            password = scanReader.nextLine();
+        }
 
-        logger.info("您输入的密码首位：「" + password.charAt(0) + "」, 末位：「" + password.charAt(password.length() - 1) + "」");
+        if (console != null) {
+            logger.info("您输入的密码长度："+ password.length() +", 首位：「" + password.charAt(0) + "」, 末位：「" + password.charAt(password.length() - 1) + "」");
+        }
 
         System.out.println("请输入登录成功后，发送消息提供的账号");
         System.out.println("※ 例如你的大号");
@@ -66,7 +72,7 @@ public class App {
         // run
         SimbotContext context = SimbotApp.run(App.class, args);
 
-        BotRegisterInfo info = new BotRegisterInfo(code, password);
+        BotVerifyInfo info = BotVerifyInfos.getInstance(code, password);
 
         // register.
         BotManager botManager = context.getBotManager();
