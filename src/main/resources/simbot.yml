@@ -1,0 +1,4 @@
+simbot:
+  component:
+    mirai:
+      device-info-output: true
