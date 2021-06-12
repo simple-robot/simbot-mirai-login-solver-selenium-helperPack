@@ -20,11 +20,11 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>net.mamoe</groupId>
-            <artifactId>mirai-login-solver-selenium</artifactId>
-            <version>1.0-dev-16</version>
-        </dependency>
+        <!--<dependency>-->
+        <!--    <groupId>net.mamoe</groupId>-->
+        <!--    <artifactId>mirai-login-solver-selenium</artifactId>-->
+        <!--    <version>1.0-dev-16</version>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>love.forte.simple-robot</groupId>
             <artifactId>component-mirai</artifactId>
@@ -57,19 +57,5 @@
             </plugin>
         </plugins>
     </build>
-
-    <!-- maven中需要配置 jcenter 仓库地址 -->
-    <repositories>
-        <repository>
-            <id>jcenter</id>
-            <name>JCenter</name>
-            <url>https://jcenter.bintray.com/</url>
-        </repository>
-        <repository>
-            <id>misc</id>
-            <name>misc</name>
-            <url>https://dl.bintray.com/karlatemp/misc</url>
-        </repository>
-    </repositories>
 
 </project>
