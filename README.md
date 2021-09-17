@@ -4,7 +4,11 @@
 
 目前过滑块验证的方式你可以去参考：
 
-https://github.com/project-mirai/mirai-login-solver-selenium
+<https://mirai.mamoe.net/topic/223/%E6%97%A0%E6%B3%95%E7%99%BB%E5%BD%95%E7%9A%84%E4%B8%B4%E6%97%B6%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88>
+
+<https://github.com/mzdluo123/TxCaptchaHelper>
+
+~~https://github.com/project-mirai/mirai-login-solver-selenium~~
 
 
-https://github.com/simple-robot/TxCaptchaHelper
+
